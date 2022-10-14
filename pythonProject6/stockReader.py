@@ -23,7 +23,6 @@ class stockReader():
         for data in readFile:
             if id == data[1]:
                 code = data[0]
-                return code
         f.close()
 
         if code == None:
@@ -32,8 +31,9 @@ class stockReader():
             for data in readFile:
                 if id == data[1]:
                     code = data[0]
-                    return code
             f.close()
+
+        return code
 
     def get_stock(self, name, engine, b_day, e_day):
 
@@ -41,6 +41,8 @@ class stockReader():
         nonZdata = data[data['Volume'] != 0]
 
         print(nonZdata)
+
+        return nonZdata
 
 
 

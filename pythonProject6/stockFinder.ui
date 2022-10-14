@@ -132,38 +132,29 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_2">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>10</y>
+      <y>40</y>
       <width>951</width>
-      <height>591</height>
+      <height>561</height>
      </rect>
     </property>
-    <property name="title">
-     <string>결과</string>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>20</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
     </property>
-    <widget class="PlotWidget" name="graphWidget" native="true">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>931</width>
-       <height>451</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QWidget" name="graphWidget2" native="true">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>480</y>
-       <width>931</width>
-       <height>101</height>
-      </rect>
-     </property>
-    </widget>
+    <property name="text">
+     <string>조회 결과</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -178,14 +169,6 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PlotWidget</class>
-   <extends>QWidget</extends>
-   <header>pyqtgraph</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
