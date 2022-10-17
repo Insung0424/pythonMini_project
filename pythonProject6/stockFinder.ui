@@ -23,8 +23,8 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>201</width>
-      <height>591</height>
+      <width>191</width>
+      <height>601</height>
      </rect>
     </property>
     <property name="title">
@@ -34,7 +34,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>40</y>
+       <y>30</y>
        <width>56</width>
        <height>12</height>
       </rect>
@@ -46,8 +46,8 @@
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>94</x>
-       <y>70</y>
+       <x>90</x>
+       <y>140</y>
        <width>91</width>
        <height>31</height>
       </rect>
@@ -59,78 +59,226 @@
     <widget class="QPushButton" name="pushButton_2">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>140</y>
-       <width>181</width>
+       <x>20</x>
+       <y>280</y>
+       <width>161</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>5일 주가이동평균</string>
+      <string>5일 주가이동평균선</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>200</y>
-       <width>181</width>
+       <x>20</x>
+       <y>320</y>
+       <width>161</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>20일 주가이동평균</string>
+      <string>20일 주가이동평균선</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_4">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>260</y>
-       <width>181</width>
+       <x>20</x>
+       <y>360</y>
+       <width>161</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>60일 주가이동평균</string>
+      <string>60일 주가이동평균선</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_5">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>320</y>
-       <width>181</width>
+       <x>20</x>
+       <y>400</y>
+       <width>161</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>120일 주가이동평균</string>
+      <string>120일 주가이동평균선</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_6">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>380</y>
-       <width>181</width>
+       <x>20</x>
+       <y>510</y>
+       <width>161</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>일간 거래량</string>
+      <string>거래량 바(Bar) 그래프</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>29</y>
-       <width>121</width>
+       <y>20</y>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
     </widget>
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>60</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>56</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>시작일</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>176</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>상단 그래프</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>560</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>그래프 지우기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>코스피와 비교하기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>나스닥지수와 비교하기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>470</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>일봉차트</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>445</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>하단 그래프</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>56</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>종료일</string>
+     </property>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>pushButton_3</zorder>
+    <zorder>pushButton_4</zorder>
+    <zorder>pushButton_5</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>dateEdit</zorder>
+    <zorder>dateEdit_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>pushButton_7</zorder>
+    <zorder>pushButton_8</zorder>
+    <zorder>pushButton_9</zorder>
+    <zorder>pushButton_10</zorder>
+    <zorder>pushButton_6</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_6</zorder>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
