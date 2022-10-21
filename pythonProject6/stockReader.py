@@ -26,11 +26,11 @@ class stockReader():
         # print(id)
         # return code.text
 
-        f = open('filename.csv', 'r')
+        f = open('KOSDAQ.csv', 'r')
         readFile = csv.reader(f)
         code = None
         for data in readFile:
-            if id == data[3]:
+            if id == data[4]:
                 # code = data[0] + '.kq'  # pandas_datareader.data 에서 사용한 방식
                 code = data[2]
         f.close()
@@ -39,9 +39,9 @@ class stockReader():
             f = open('KOSPI.csv', 'r')
             readFile = csv.reader(f)
             for data in readFile:
-                if id == data[1]:
+                if id == data[4]:
                     # code = data[0] + '.ks'  # pandas_datareader.data 에서 사용한 방식
-                    code = data[0]
+                    code = data[2]
             f.close()
 
         return code

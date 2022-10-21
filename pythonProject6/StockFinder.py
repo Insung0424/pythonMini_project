@@ -24,7 +24,7 @@ import matplotlib.ticker as ticker
 # 그래프 폰트 크기 조절
 matplotlib.rc('xtick', labelsize=7)
 matplotlib.rc('ytick', labelsize=7)
-matplotlib.rc('font', family='NanumGothic')
+matplotlib.rc('font', family='Malgun Gothic')
 # UI 불러오기
 form_class = uic.loadUiType("stockFinder.ui")[0]
 # # 검색 엔진
@@ -250,8 +250,6 @@ class MyWindow(QMainWindow, form_class):
 
         result = self.SDR.get_stock(id, start, end)
 
-        self.get_result = result  # 다른 버튼 에서 data를 사용하기 위해 변수 설정
-
         self.top_axes.plot(result.index, result['Close'], label='코스피')
         self.top_axes.legend(loc='best')
         self.canvas1.draw()
@@ -266,7 +264,6 @@ class MyWindow(QMainWindow, form_class):
 
         result = self.SDR.get_stock(id, start, end)
         print(result)
-        self.get_result = result  # 다른 버튼 에서 data를 사용하기 위해 변수 설정
 
         self.top_axes.plot(result.index, result['Close'], label='나스닥')
         self.top_axes.legend(loc='best')
